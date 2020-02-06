@@ -14,6 +14,5 @@ public class DefenderButton : MonoBehaviour
         }
         GetComponent<SpriteRenderer>().color = Color.white;
         FindObjectOfType<DefenderSpawner>().SetSelectedDefender(defenderPrefab);
-        Debug.Log("hello");
     }
 }
