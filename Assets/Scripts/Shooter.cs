@@ -42,7 +42,13 @@ public class Shooter : MonoBehaviour
 
     private bool IsAttackerInLane()
     {
-        return myLaneSpawner.transform.childCount > 0;
+        if (myLaneSpawner && myLaneSpawner.transform.childCount > 0) {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public void Fire()
